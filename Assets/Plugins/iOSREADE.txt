@@ -1,0 +1,39 @@
+1.所有用到的权限需要动态申请的插件，需要自己完全用原生来写
+	unity ios permission
+	https://github.com/react-native-community/react-native-permissions
+	https://github.com/react-native-community/react-native-permissions.git  
+2.对于位置权限的iOS11的修改：
+	https://www.jianshu.com/p/d71980e50284
+	https://ask.dcloud.net.cn/question/54571
+	https://tech.jiangjiesheng.cn/mui/189.html
+
+3.本组件需要添加三个库：
+	Build Phases--Link Binary With Libraries
+		Photos.framework
+		AssetsLibrary.framework
+		CoreLocation.framework
+	Info.plist
+		<key>NSCameraUsageDescription</key>
+	    <string>APP需要您的同意,才能访问相机</string>
+	    <key>NSContactsUsageDescription</key>
+	    <string>APP需要您的同意,才能始终访问通讯录</string>
+	    <key>NSHealthShareUsageDescription</key>
+	    <string>App需要您的同意,才能访问健康分享</string>
+	    <key>NSHealthUpdateUsageDescription</key>
+	    <string>App需要您的同意,才能访问健康更新</string>
+	    <key>NSLocationUsageDescription</key>
+	    <string>APP需要您的同意,才能访问位置</string>
+	    <key>NSLocationAlwaysUsageDescription</key>
+	    <string>APP需要您的同意,降级为应用使用期间</string>
+	    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	    <string>APP需要您的同意,才能始终访问位置</string>
+	    <key>NSLocationWhenInUseUsageDescription</key>
+	    <string>访问位置用处说明</string>
+	    <key>NSMicrophoneUsageDescription</key>
+	    <string>APP需要您的同意,才能访问麦克风</string>
+	    <key>NSMotionUsageDescription</key>
+	    <string>App需要您的同意,才能访问运动与健身</string>
+	    <key>NSPhotoLibraryAddUsageDescription</key>
+	    <string>APP需要您的同意,才能保存图片到相册</string>
+	    <key>NSPhotoLibraryUsageDescription</key>
+	    <string>APP需要您的同意,才能访问相册</string>
